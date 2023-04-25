@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+:root{
+	--grid-element-size:50px;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+    
+}
+body{
+	background:linear-gradient(lightblue,cornflowerblue);
+	width:1920px;
+	height:867px;
+	color:white;
+}
+
+.main-container{
+	position: relative;
+	margin:auto;
+	margin-top:70px;
+	width:325px;
+	height:700px;
+	border-radius: 20px 20px 20px 20px;
+}
+.buttons-container{
+	background-color:rgb(24,33,42);
+	width:100%;
+	height:60%;
+	padding-top:30px;
+	display:grid;
+	grid-template-columns: var(--grid-element-size) var(--grid-element-size) var(--grid-element-size) var(--grid-element-size);
+    justify-content: space-evenly;
+    border-radius: 0px 0px 20px 20px;
+    color:white;
+}
+.results-container{
+	background-color:rgb(54,71,79);
+	width:100%;
+	height:40%;
+	border-radius: 20px 20px 0px 0px;
+	margin:0;
+	overflow:hidden;
+}
+.btn{
+	border:none;
+	width:50px;
+	height:50px;
+	border-radius:50%;
+	background-color:rgb(24,33,42);
+	color:white;
+	font-size:25px;
+	cursor:pointer;
+}
+.operator-btn{
+    background-color:white;
+    color:black;
+}
+#equals{
+	background-color:rgb(255,101,49);
+	color:white;
+}
+.title{
+	margin-top:20px;
+	margin-left:30px;
+}
+.results-container p{
+	text-align:right;
+	font-size:40px;
+}
+.results-container p:first-of-type{
+	margin-top:60px;
+}
+.results-container h1{
+font-weight:normal;
+}
+.theme-btn{
+	top:50px;
+	left:-200px;
+	position:absolute;
+	width:50px;
+	height:50px;
+	font-size:30px;
+	border:none;
+	background-color:rgba(0,0,255,0.1);
+	border-radius:50%;
+	color:white;
+    cursor:pointer;
+}
